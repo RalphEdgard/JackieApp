@@ -17,3 +17,19 @@ Agregue VS Code a su Dock haciendo clic con el botón derecho en el ícono, ubic
 
 Cuando la aplicación se haya descargado en su máquina local (computadora), debe abrir
 
+A continuación, debe abrir una terminal dentro de la aplicación. Debe estar ubicado en la parte superior izquierda de la aplicación.
+
+Una vez que vea el nuevo terminal, ejecute este comando en el indicador:
+git clone https://github.com/RalphEdgard/JackieApp.git
+
+luego ejecuta este comando
+cd JackieApp
+
+Finalmente ejecuta este comando:
+npm run start 
+
+Le dará un enlace que muy probablemente dirá esto:
+localhost:3000
+
+
+
