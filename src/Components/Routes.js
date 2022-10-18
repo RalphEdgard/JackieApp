@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './Login';
-import Register from './Register';
+import RegisterPage from './RegisterPage';
 
 function Routes() {
     return (
@@ -10,7 +10,7 @@ function Routes() {
                     <Login />
                 </Route>
                 <Route path='/register'>
-                    <Register />
+                    <RegisterPage />
                 </Route>
             </Switch>
         </Router>
