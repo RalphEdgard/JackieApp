@@ -1,9 +1,9 @@
-Cómo ver el sitio web localmente.
+Cómo ver el sitio web localmente. <br />
 
-Angel Puede ayudar
+Angel Puede ayudar <br />
 
-Para el sistema operativo Windows:
-Instalación#
+Para el sistema operativo Windows:<br />
+Instalación#<br />
 Descargue el instalador de Visual Studio Code para Windows. Anda a (https://go.microsoft.com/fwlink/?LinkID=534107)
 Una vez descargado, ejecute el instalador (VSCodeUserSetup-{version}.exe). Esto solo tomará un minuto.
 De manera predeterminada, VS Code se instala en C:\Users\{Username}\AppData\Local\Programs\Microsoft VS Code.
@@ -24,7 +24,7 @@ A continuación, debe abrir una terminal dentro de la aplicación. Debe estar ub
 Una vez que vea el nuevo terminal, ejecute este comando en el indicador:
 git clone https://github.com/RalphEdgard/JackieApp.git
 
-luego ejecuta este comando
+luego ejecuta este comando:
 cd JackieApp
 
 Finalmente ejecuta este comando:
