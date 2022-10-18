@@ -34,5 +34,5 @@ npm run start
 Le dará un enlace que muy probablemente dirá esto:
 localhost:3000
 
-
-
+<br />
+Pon eso al browser
