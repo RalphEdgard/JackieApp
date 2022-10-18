@@ -1,12 +1,11 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import ListItem from "@mui/material/ListItem";
 import LoginIcon from "@mui/icons-material/Login";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
-import { ReactComponent as LogoSvg } from "../images/android2.svg";
+import { ReactComponent as LogoSvg } from "../src/images/android2.svg";
 
 export default function Login() {
   return (
