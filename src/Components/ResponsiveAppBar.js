@@ -26,11 +26,27 @@ const ResponsiveAppBar = () => {
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                            JACKIE
                         </Typography>
 
                         <Typography
                             href="/"
+                            component='a'
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'none', md: 'flex' },
+                                fontFamily: 'monospace',
+                                fontSize: '14px',
+                                fontWeight: 700,
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            Home
+                        </Typography>   
+
+                        <Typography
+                            href="/login"
                             component='a'
                             sx={{
                                 mr: 2,
