@@ -3,55 +3,79 @@ import { Box } from "@mui/system";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import ContentSlider from "./ContentSlider";
+import Image from 'mui-image';
+import svgImage from "../images/landscape.svg"
+import AspectRatio from '@mui/joy/AspectRatio';
+import Card from '@mui/joy/Card';
+import CardOverflow from '@mui/joy/CardOverflow';
+import Divider from '@mui/joy/Divider';
+import Typography from '@mui/joy/Typography';
 
 function Home() {
-    const gradient = keyframes`
-    {
-    0% {
-        background-position: 0 100%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: 0 100%;
-    }}
-    `;
-    const AnimatedGradientText = styled.h1`
-        animation: ${gradient} 9s ease-in-out infinite;
-        background: linear-gradient(to right, #A52237, #1976d2);
-        background-size: 700%;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    `;
+    
     return (
         <>
             <Box flexGrow={1}>
-                <Grid container spacing={2}>
-                    <Grid item xs={6} style={{ backgroundColor: 'grey', display: 'flex', justifyContent: 'center' }}>
-                        <Grid container style={{ width: '470px' }}>
+                <Grid container spacing={2} style={{background: '#c0d219'}}>
+                    <Grid item xs={6} style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Grid container>
                             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
                                 <h1>Buy An Item That You Like With</h1>
                             </Grid>
                             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
-                                <AnimatedGradientText style={{ fontSize: '80px' }}>JACKIE!</AnimatedGradientText>
+                            <Card variant="outlined" sx={{ width: 320 }} style={{background: "#eeeee4"}}>
+                            <CardOverflow>
+                                <AspectRatio ratio="2">
+                                <img
+                                    src="https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=318"
+                                    srcSet="https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=318&dpr=2 2x"
+                                    loading="lazy"
+                                    alt=""
+                                />
+                                </AspectRatio>
+                            </CardOverflow>
+                            <Typography level="h2" sx={{ fontSize: 'md', mt: 2 }}>
+                                Yosemite National Park
+                            </Typography>
+                            <Typography level="body2" sx={{ mt: 0.5, mb: 2 }}>
+                            <p>The application is very simple to use, you are able to create an account and then simply browse the items page to select an item that you want and then purchase it!</p>
+                            </Typography>
+                            <Divider />
+                            <CardOverflow
+                                variant="soft"
+                                sx={{
+                                display: 'flex',
+                                gap: 1.5,
+                                py: 1.5,
+                                px: 'var(--Card-padding)',
+                                bgcolor: 'background.level1',
+                                }}
+                            >
+                                <Typography level="body3" sx={{ fontWeight: 'md', color: 'text.secondary' }}>
+                                6.3k views
+                                </Typography>
+                                <Divider orientation="vertical" />
+                                <Typography level="body3" sx={{ fontWeight: 'md', color: 'text.secondary' }}>
+                                1 hour ago
+                                </Typography>
+                            </CardOverflow>
+                        </Card>
                             </Grid>
-                            <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
-                                <p>The application is very simple to use, you are able to create an account and then simply browse the items page to select an item that you want and then purchase it!</p>
-                            </Grid>
-                            <Grid container spacing={2}>
+                            <Grid container spacing={2} style={{marginTop: '20px'}}>
                                 <Grid item xs={6}>
-                                    <Button style={{ width: '100%' }} variant="contained">Ralph</Button>
+                                    <Button style={{ width: '100%' }} variant="contained">Just For Show</Button>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Button style={{width: '100%'}} variant="outlined">Ralph Too</Button>
+                                    <Button style={{width: '100%'}} variant="outlined">Just For Show</Button>
                                 </Grid>                                
                             </Grid>
-
+  
+                        
                         </Grid>
+
                     </Grid>
                     <Grid item xs={6}>
-                        <ContentSlider />
+                        <Image src={svgImage} height="100%" width="100"/>
                     </Grid>
                 </Grid>
             </Box>

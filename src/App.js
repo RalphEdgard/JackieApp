@@ -13,7 +13,7 @@ function App() {
   root.render (
     <StrictMode>
       <ResponsiveAppBar />
-      <div style={{ display: 'flex', marginTop: '80px' }}>
+      <div style={{ display: 'flex', marginTop: '64px' }}>
         <Router>
           <Switch>
             <Route exact path='/'>
