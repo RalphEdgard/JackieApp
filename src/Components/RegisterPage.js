@@ -1,11 +1,9 @@
-import StepperForRegister from "./StepperForRegister";
+import StepperForRegister from './StepperForRegister';
 
 function RegisterPage() {
-    return (
-        <>
-            <StepperForRegister />
-        </>
-    );
+  return (
+    <StepperForRegister />
+  );
 }
 
 export default RegisterPage;
